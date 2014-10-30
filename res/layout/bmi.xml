@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.health.bmi.MainActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/txtFeildWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textview_Category"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+      
+    </EditText>
+
+    <NumberPicker
+        android:id="@+id/NumberPicker_inch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberPicker_ft"
+        android:layout_toRightOf="@+id/TextView01" />
+
+    <NumberPicker
+        android:id="@+id/NumberPicker_inch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_toLeftOf="@+id/NumberPicker_inch2" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/Textview_Category"
+        android:text="Inch" />
+
+    <TextView
+        android:id="@+id/Textview_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/weight_textview" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Textview_Category"
+        android:layout_below="@+id/txtFeildWeight"
+        android:layout_marginTop="22dp"
+        android:text="@string/height_Textview" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFeildWeight"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="17dp"
+        android:text="Feet" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker_ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/NumberPicker_inch1"
+        android:layout_toLeftOf="@+id/btnTreatement" />
+
+    <Button
+        android:id="@+id/btnTreatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Textview_Category"
+        android:layout_below="@+id/NumberPicker_inch1"
+        android:layout_marginTop="38dp"
+        android:text="@string/submit_button" />
+
+</RelativeLayout>
